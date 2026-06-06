@@ -24,6 +24,13 @@
 // ------------------------------------------------------------
 
 let currentScene = "home";
+const buttonW = 200;
+const buttonH = 52;
+const gap = 100;
+
+const leftX = 800 / 2 - (buttonW / 2 + gap / 2);
+const rightX = 800 / 2 + (buttonW / 2 + gap / 2);
+const buttonY = 300;
 
 function setup() {
   createCanvas(800, 450);
@@ -69,9 +76,14 @@ function draw() {
 
 function mousePressed() {
   if (currentScene === "home") {
-
+   if (isMouseOver(leftX, buttonY, buttonW, buttonH) || isMouseOver(rightX, buttonY, buttonW, buttonH)) {
+     currentScene = "1";
+   }
+  if (isMouseOver(rightX, buttonY, buttonW, buttonH) || isMouseOver(rightX, buttonY, buttonW, buttonH)) {
+     currentScene = "2";
+   }
+ }
 }
-
 
 function drawButton(x, y, w, h, label, isHovered) {
  push();
@@ -112,7 +124,6 @@ function drawHomeScreen() {
  textSize(52);
  text("Blob Rock, Paper, Scissors", width / 2, 140);
 
-
  // Subtitle
  fill(160);
  textSize(16);
@@ -121,11 +132,20 @@ function drawHomeScreen() {
 
  // Start button
  drawButton(
-   width / 2,
-   390,
-   200,
-   52,
+   leftX,
+   buttonY,
+   buttonW,
+   buttonH,
    "Start Game",
-   isMouseOver(width / 2, 390, 200, 52),
+   isMouseOver(leftX, buttonY, buttonW, buttonH),
+ );
+
+ drawButton(
+   rightX,
+   buttonY,
+   buttonW,
+   buttonH,
+   "Start Game",
+   isMouseOver(rightX, buttonY, buttonW, buttonH),
  );
 }
