@@ -1,5 +1,4 @@
 function drawScene2() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene2() {
  textStyle(BOLD);
  text("What will you order at Tim Hortons?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,
