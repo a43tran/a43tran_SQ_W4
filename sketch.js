@@ -24,20 +24,20 @@
 // ------------------------------------------------------------
 
 let currentScene = "home";
-const buttonW = 200;
+const buttonW = 250;
 const buttonH = 52;
 const gap = 100;
 
 const leftX = 800 / 2 - (buttonW / 2 + gap / 2);
 const rightX = 800 / 2 + (buttonW / 2 + gap / 2);
-const buttonY = 300;
+const buttonY = 250;
 
 function setup() {
   createCanvas(800, 450);
 }
 
 function draw() {
-  background(220);
+  background("#ffd4e1");
   
   if (currentScene === "home") {
     drawHomeScreen();
@@ -91,8 +91,8 @@ function drawButton(x, y, w, h, label, isHovered) {
 
 
  // Button background — lighter colour when hovered
- fill(isHovered ? color(80, 80, 100) : color(40, 40, 60));
- stroke(isHovered ? color(180, 180, 220) : color(80, 80, 100));
+ fill(isHovered ? color("#d97593") : color("#b3345a"));
+ stroke(isHovered ? color("#eb91ac") : color("#9c1940"));
  strokeWeight(2);
  rect(x, y, w, h, 8); // rounded corners
 
@@ -119,16 +119,12 @@ function isMouseOver(x, y, w, h) {
 
 function drawHomeScreen() {
  // Title
- fill(255);
+ fill("#d96c8d");
  textAlign(CENTER);
- textSize(52);
- text("Blob Rock, Paper, Scissors", width / 2, 140);
-
- // Subtitle
- fill(160);
- textSize(16);
- text("Rock. Paper. Scissors.", width / 2, 185);
- text("Best of 3 rounds wins.", width / 2, 210);
+ textSize(25);
+ textFont("monospace");
+ textStyle(BOLD);
+ text("You're on UWaterloo campus, what should you do?", width / 2, 180);
 
  // Start button
  drawButton(
@@ -136,7 +132,7 @@ function drawHomeScreen() {
    buttonY,
    buttonW,
    buttonH,
-   "Start Game",
+   "Study at DC Library",
    isMouseOver(leftX, buttonY, buttonW, buttonH),
  );
 
@@ -145,7 +141,7 @@ function drawHomeScreen() {
    buttonY,
    buttonW,
    buttonH,
-   "Start Game",
+   "Exercise at PAC",
    isMouseOver(rightX, buttonY, buttonW, buttonH),
  );
 }
