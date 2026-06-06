@@ -41,8 +41,6 @@ function draw() {
   
   if (currentScene === "home") {
     drawHomeScreen();
-  } else if (currentScene === "1") {
-    drawScene1();
   } else if (currentScene === "2") {
     drawScene2();
   } else if (currentScene === "3") {
@@ -76,11 +74,79 @@ function draw() {
 
 function mousePressed() {
   if (currentScene === "home") {
-   if (isMouseOver(leftX, buttonY, buttonW, buttonH) || isMouseOver(rightX, buttonY, buttonW, buttonH)) {
-     currentScene = "1";
-   }
-  if (isMouseOver(rightX, buttonY, buttonW, buttonH) || isMouseOver(rightX, buttonY, buttonW, buttonH)) {
+   if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
      currentScene = "2";
+     return;
+   }
+  if (isMouseOver(rightX, buttonY, buttonW, buttonH)) {
+     currentScene = "3";
+     return;
+   }
+  }
+
+ if (currentScene === "2") {
+  if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
+     currentScene = "4";
+     return;
+   }
+     if (isMouseOver(rightX, buttonY, buttonW, buttonH)) {
+     currentScene = "5";
+     return;
+   }
+ }
+
+ if (currentScene === "3") {
+  if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
+     currentScene = "6";
+     return;
+   }
+     if (isMouseOver(rightX, buttonY, buttonW, buttonH)) {
+     currentScene = "7";
+     return;
+   }
+ }
+
+  if (currentScene === "4") {
+    if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
+     currentScene = "8";
+     return;
+   }
+     if (isMouseOver(rightX, buttonY, buttonW, buttonH)) {
+     currentScene = "9";
+     return;
+   }
+ }
+
+  if (currentScene === "5") {
+    if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
+     currentScene = "10";
+     return;
+   }
+     if (isMouseOver(rightX, buttonY, buttonW, buttonH)) {
+     currentScene = "11";
+     return;
+   }
+ }
+
+  if (currentScene === "6") {
+    if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
+     currentScene = "12";
+     return;
+   }
+     if (isMouseOver(rightX, buttonY, buttonW, buttonH)) {
+     currentScene = "13";
+     return;
+   }
+ }
+
+  if (currentScene === "7") {
+    if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
+     currentScene = "14";
+     return;
+   }
+     if (isMouseOver(rightX, buttonY, buttonW, buttonH)) {
+     currentScene = "15";
+     return;
    }
  }
 }
