@@ -1,5 +1,4 @@
 function drawScene4() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene4() {
  textStyle(BOLD);
  text("Now you’re feeling energized, where will you sit?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,

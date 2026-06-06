@@ -1,5 +1,4 @@
 function drawScene10() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene10() {
  textStyle(BOLD);
  text("The library is too full, where will you go?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,

@@ -1,5 +1,4 @@
 function drawScene8() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene8() {
  textStyle(BOLD);
  text("It’s a bit loud, what will you do?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,

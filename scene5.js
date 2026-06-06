@@ -1,5 +1,4 @@
 function drawScene5() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene5() {
  textStyle(BOLD);
  text("Now that you’re full, you’re craving a drink.", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,

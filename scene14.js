@@ -1,5 +1,4 @@
 function drawScene14() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene14() {
  textStyle(BOLD);
  text("Where will you guys eat for lunch?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,

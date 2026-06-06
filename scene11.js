@@ -1,5 +1,4 @@
 function drawScene11() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene11() {
  textStyle(BOLD);
  text("You forgot you had a meeting, what will you do?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,

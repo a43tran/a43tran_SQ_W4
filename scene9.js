@@ -1,5 +1,4 @@
 function drawScene9() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene9() {
  textStyle(BOLD);
  text("What are you going to study today?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,

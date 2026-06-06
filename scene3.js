@@ -1,5 +1,4 @@
 function drawScene3() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene3() {
  textStyle(BOLD);
  text("What should you workout today?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,

@@ -1,5 +1,4 @@
 function drawScene7() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene7() {
  textStyle(BOLD);
  text("You spot a friend at the gym, what will you do?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,

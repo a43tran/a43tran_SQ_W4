@@ -1,5 +1,4 @@
 function drawScene13() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene13() {
  textStyle(BOLD);
  text("You're starving, what will you order?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,

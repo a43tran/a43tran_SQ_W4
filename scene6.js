@@ -1,5 +1,4 @@
 function drawScene6() {
- // Title
  fill("#d96c8d");
  textAlign(CENTER);
  textSize(25);
@@ -7,7 +6,6 @@ function drawScene6() {
  textStyle(BOLD);
  text("Now that you’re done, where should you eat?", width / 2, 180);
 
- // Start button
  drawButton(
    leftX,
    buttonY,
