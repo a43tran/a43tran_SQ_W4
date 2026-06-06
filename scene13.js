@@ -5,7 +5,7 @@ function drawScene13() {
  textSize(25);
  textFont("monospace");
  textStyle(BOLD);
- text("What will you order?", width / 2, 180);
+ text("You're starving, what will you order?", width / 2, 180);
 
  // Start button
  drawButton(

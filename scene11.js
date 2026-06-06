@@ -5,7 +5,7 @@ function drawScene11() {
  textSize(25);
  textFont("monospace");
  textStyle(BOLD);
- text("You forgot you had a club meeting, what will you do?", width / 2, 180);
+ text("You forgot you had a meeting, what will you do?", width / 2, 180);
 
  // Start button
  drawButton(
@@ -13,7 +13,7 @@ function drawScene11() {
    buttonY,
    buttonW,
    buttonH,
-   "Run to the meeting room",
+   "Run to the meeting",
    isMouseOver(leftX, buttonY, buttonW, buttonH),
  );
 
@@ -22,7 +22,7 @@ function drawScene11() {
    buttonY,
    buttonW,
    buttonH,
-   "Wait and take the nearest bus",
+   "Take the nearest bus",
    isMouseOver(rightX, buttonY, buttonW, buttonH),
  );
 }

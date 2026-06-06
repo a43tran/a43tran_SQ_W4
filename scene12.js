@@ -5,7 +5,7 @@ function drawScene12() {
  textSize(25);
  textFont("monospace");
  textStyle(BOLD);
- text("What will you order?", width / 2, 180);
+ text("You're not too hungry, what will you order?", width / 2, 180);
 
  // Start button
  drawButton(
@@ -13,7 +13,7 @@ function drawScene12() {
    buttonY,
    buttonW,
    buttonH,
-   "Special Rice Noodle Soup",
+   "Spicy Rice Noodle Soup",
    isMouseOver(leftX, buttonY, buttonW, buttonH),
  );
 

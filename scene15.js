@@ -13,7 +13,7 @@ function drawScene15() {
    buttonY,
    buttonW,
    buttonH,
-   "Listen to music and walk home slowly",
+   "Walk home slowly",
    isMouseOver(leftX, buttonY, buttonW, buttonH),
  );
 
@@ -22,7 +22,7 @@ function drawScene15() {
    buttonY,
    buttonW,
    buttonH,
-   "Sit at the SLC cafeteria to rest",
+   "Rest at SLC lounge",
    isMouseOver(rightX, buttonY, buttonW, buttonH),
  );
 }
