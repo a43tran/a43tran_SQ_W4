@@ -1,4 +1,4 @@
-function drawScene() {
+function drawScene2() {
  // Title
  fill("#d96c8d");
  textAlign(CENTER);

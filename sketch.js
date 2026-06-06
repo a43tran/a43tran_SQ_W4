@@ -73,6 +73,8 @@ function draw() {
 }
 
 function mousePressed() {
+  print("Clicked at:", mouseX, mouseY, "Scene:", currentScene);
+
   if (currentScene === "home") {
    if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
      currentScene = "2";
