@@ -5,7 +5,7 @@ function drawScene4() {
  textSize(25);
  textFont("monospace");
  textStyle(BOLD);
- text("Now that you’re full, you’re craving a drink.", width / 2, 180);
+ text("Now you’re feeling energized, where will you sit?", width / 2, 180);
 
  // Start button
  drawButton(
@@ -13,7 +13,7 @@ function drawScene4() {
    buttonY,
    buttonW,
    buttonH,
-   "Mango Creamy Chill",
+   "Group study basement",
    isMouseOver(leftX, buttonY, buttonW, buttonH),
  );
 
@@ -22,7 +22,7 @@ function drawScene4() {
    buttonY,
    buttonW,
    buttonH,
-   "Peach Frozen Quencher",
+   "Silent study zone",
    isMouseOver(rightX, buttonY, buttonW, buttonH),
  );
 }

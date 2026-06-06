@@ -5,7 +5,7 @@ function drawScene5() {
  textSize(25);
  textFont("monospace");
  textStyle(BOLD);
- text("Now that you’re done, where should you eat?", width / 2, 180);
+ text("Now that you’re full, you’re craving a drink.", width / 2, 180);
 
  // Start button
  drawButton(
@@ -13,7 +13,7 @@ function drawScene5() {
    buttonY,
    buttonW,
    buttonH,
-   "Pho Anh Vu",
+   "Mango Creamy Chill",
    isMouseOver(leftX, buttonY, buttonW, buttonH),
  );
 
@@ -22,7 +22,7 @@ function drawScene5() {
    buttonY,
    buttonW,
    buttonH,
-   "Lazeez Shawarma",
+   "Peach Frozen Quencher",
    isMouseOver(rightX, buttonY, buttonW, buttonH),
  );
 }

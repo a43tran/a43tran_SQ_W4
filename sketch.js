@@ -28,12 +28,15 @@ const buttonW = 250;
 const buttonH = 52;
 const gap = 100;
 
-const leftX = 800 / 2 - (buttonW / 2 + gap / 2);
-const rightX = 800 / 2 + (buttonW / 2 + gap / 2);
+let leftX
+let rightX;
 const buttonY = 250;
 
 function setup() {
   createCanvas(800, 450);
+  
+  leftX = 800 / 2 - (buttonW / 2 + gap / 2);
+  rightX = 800 / 2 + (buttonW / 2 + gap / 2);
 }
 
 function draw() {
@@ -73,8 +76,6 @@ function draw() {
 }
 
 function mousePressed() {
-  print("Clicked at:", mouseX, mouseY, "Scene:", currentScene);
-
   if (currentScene === "home") {
    if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
      currentScene = "2";
@@ -86,7 +87,7 @@ function mousePressed() {
    }
   }
 
- if (currentScene === "2") {
+ else if (currentScene === "2") {
   if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
      currentScene = "4";
      return;
@@ -97,7 +98,7 @@ function mousePressed() {
    }
  }
 
- if (currentScene === "3") {
+ else if (currentScene === "3") {
   if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
      currentScene = "6";
      return;
@@ -108,7 +109,7 @@ function mousePressed() {
    }
  }
 
-  if (currentScene === "4") {
+  else if (currentScene === "4") {
     if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
      currentScene = "8";
      return;
@@ -119,7 +120,7 @@ function mousePressed() {
    }
  }
 
-  if (currentScene === "5") {
+  else if (currentScene === "5") {
     if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
      currentScene = "10";
      return;
@@ -130,7 +131,7 @@ function mousePressed() {
    }
  }
 
-  if (currentScene === "6") {
+  else if (currentScene === "6") {
     if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
      currentScene = "12";
      return;
@@ -141,7 +142,7 @@ function mousePressed() {
    }
  }
 
-  if (currentScene === "7") {
+  else if (currentScene === "7") {
     if (isMouseOver(leftX, buttonY, buttonW, buttonH)) {
      currentScene = "14";
      return;
